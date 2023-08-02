@@ -97,11 +97,6 @@ button.outlined,
     border: .2rem solid var(--Blue);
 }
 
-input, button , .button{
-    width: 100%;
-    margin-bottom: 1.8rem;
-}
-
 .content header{
     width: 80%;
     margin: 3.5rem auto;
