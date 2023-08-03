@@ -72,10 +72,17 @@
     justify-content: space-between;
 }
 
-#question-form form footer div{
+#question-form form footer > div{
+    display: flex;
+    align-items: center;
     color: var(--Icons-details);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     
+}
+
+#question-form form footer > div img{
+    margin-right: .9rem;
+
 }
