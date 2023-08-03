@@ -86,3 +86,10 @@
     margin-right: .9rem;
 
 }
+
+#question-form form footer button{
+    height: auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem;
+
+}
