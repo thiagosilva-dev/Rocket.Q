@@ -49,7 +49,7 @@
 }
 
 #question-form form {
-    border: .2rem solid var(--Grey-blue);
+    border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
     border-radius: 0 .8rem .8rem .8rem;
 
@@ -66,7 +66,7 @@
 }
 
 #question-form form textarea::placeholder {
-    color: var(--Grey-blue);
+    color: var(--grey-blue);
 }
 
 #question-form form footer {
@@ -79,7 +79,7 @@
     display: flex;
     align-items: center;
 
-    color: var(--Icons-details);
+    color: var(--icons-details);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -100,7 +100,7 @@
 
 /* Questions */
 .question-wrapper {
-    background: var(--Light-blue);
+    background: var(--light-blue);
     margin-bottom: .8rem;
     border-radius: 0 .8rem .8rem .8rem;
     padding: 2.4rem;
@@ -113,7 +113,7 @@
 }
 
 .question-wrapper .question-content .user {
-    background: var(--Blue);
+    background: var(--blue);
     clip-path: circle();
     padding: 1.4rem;
 
@@ -154,9 +154,9 @@
 /* Question Read */
 
 .question-wrapper.read {
-    background: var(--Grey-medium);
+    background: var(--grey-medium);
 }
 
 .question-wrapper.read .question-content .user {
-    background: var(--Grey-blue);
+    background: var(--grey-blue);
 }

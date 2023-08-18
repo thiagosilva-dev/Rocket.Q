@@ -11,24 +11,24 @@
 html {
     --black: #0D114F;
     --white: #FAFAFA;
-    --Red: #E83F5B;
-    --Light-blue: #E0ECFF;
-    --Blue: #3485FF;
-    --Background: #FBFCFF;
-    --Overlay: #040911;
-    --Icons-details: #A5B0C1;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
 
-    --Grey-dark: #4D5E77;
-    --Grey-blue: #A1B2CD;
-    --Grey-light: #E5EAF1;
-    --Grey-medium: #eaecf2;
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+    --grey-medium: #eaecf2;
 
     font-size: 62.5%;
 }
 
 body {
     height: 100vh;
-    background: var(--Background);
+    background: var(--background);
     display: flex;
 }
 
@@ -78,7 +78,7 @@ button,
     align-items: center;
     justify-content: center;
 
-    background: var(--Blue);
+    background: var(--blue);
     color: var(--white);
 
     transition: filter .2s;
@@ -101,10 +101,25 @@ button>img,
 button.outlined,
 .button.outlined {
     background: var(--white);
-    color: var(--Blue);
-    border: .2rem solid var(--Blue);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
 }
 
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
+
+}
+
+button.grey,
+.button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark);
+
+}
+
+/* HEADER */
 .content header {
     width: 80%;
     margin: 3.5rem auto;
