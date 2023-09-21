@@ -61,10 +61,34 @@ module.exports = {
       isNoQyestions: isNoQyestions
     });
   },
-  enter(req, res) {
+  async enter(req, res) {
+    const db = await Database();
+
     const roomId = req.body.roomId
 
-    res.redirect(`/room/${roomId}`)
+    const roomsExistIds = await db.all(`SELECT id FROM rooms`);
+
+
+    isRoom = roomsExistIds.some((roomsExistIds) => roomsExistIds.id == roomId);
+
+
+    if (roomId.length != 6) {
+      res.render('erropasss', { roomId: roomId })
+
+
+    } else if (!isRoom) {
+
+      res.render('errocode', { roomId: roomId })
+
+
+
+    } else {
+
+      res.redirect(`/room/${roomId}`)
+
+    }
+
+
   }
 };
 
